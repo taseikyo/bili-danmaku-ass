@@ -21,23 +21,11 @@
     #side-buttons { width: 400px; height: 160px; float: right; padding: 0; text-align: right; margin-right: 30px; }
     #convert { background: #F25D8E; color: #fff; font-size: 32px; line-height: 50px; padding: 10px 50px; width: 300px; clear: both; display: block; float: right; text-align: center; }
     #convert:hover { background: #f32b6d; }
-    #report { float: right; width: 100%; height: 70px; padding: 20px 0 0; display: block; font-size: 16px; }
-    #report1, #report2 { height: 80px; width: 48%; display: block; }
-    #report1 { float: left; }
-    #report2 { float: right; }
-    #report a { width: 100%; background: #e1e1e1; display: block; height: 40px; line-height: 40px; color: #aaa; text-align: center; }
-    #report a:hover { background: #fdb4c8; color: #fff; }
-    #report span { width: 100%; text-align: center; display: block; line-height: 30px; color: #aaa; }
     h3 { font-size: 24px; font-weight: bold; border-bottom: 2px #ccc solid; padding: 10px 20px; margin: 20px 0 10px; }
     h3::before { background: #f32b6d; content: ""; display: block; float: left; height: 20px; left: -20px; position: relative; width: 10px; }
-    .browser { width: 840px; padding: 10px 20px 10px 100px; position: relative; min-height: 100px; }
-    .browser-icon { position: absolute; left: 20px; top: 20px; }
     .warning { color: red; font-weight: bold; }
     .in { padding: 5px 2em; border: 4px; }
     .p { margin: 0.5em 0; }
-    ul { margin: 0; }
-    .addon { display: block; height: 80px; line-height: 80px; font-size: 24px; background: black; text-align: center; color: white; display: none; }
-    .addon a { color: #F25D8E; text-decoration: underline; }
   </style>
   <script> var GM_xmlhttpRequest = GM_addStyle = function () { }; </script>
   <script src="bilibili_ASS_Danmaku_Downloader.user.js"></script>
@@ -48,13 +36,10 @@
       return parseXML(content);
     }
   </script>
-  <script src="../page/common.js"></script>
+  <script src="common.js"></script>
 </head>
 <body>
-  <div class="addon">
-    Firefox 用户可以<a href="https://addons.mozilla.org/en-US/firefox/addon/ass-danmaku/">安装附加组件版</a>方便下载弹幕
-  </div>
-  <div id="main-body">
+  	<div id="main-body">
 
     <h1>bilibili ASS 弹幕在线转换</h1>
 
@@ -67,17 +52,6 @@
         <label title="上传下载好的 XML 文件在线转换"><span id="convert">在线转换</span><input id="upload" style="display:none" type="file" /></label>
       </div>
     </header>
-    
-    <h3>在线转换</h3>
-    <div class="in">
-      <div class="p">如果您手工下载了弹幕的 XML 文件，您可以点击上方的在线转换按钮将 XML 文件转换为 ASS 字幕文件。转换无需安装脚本或任何扩展。</div>
-    </div>
-
-    <h3>相关脚本</h3>
-    <div class="in">
-      <div class="p">AcFun的弹幕请参考：<a href="../acfun/">AcFun ASS 弹幕在线转换</a></div>
-    </div>
-
   </div>
 </body>
 </html>

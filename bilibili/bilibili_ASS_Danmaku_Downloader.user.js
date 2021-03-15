@@ -24,8 +24,8 @@
 
 // 设置项
 var config = {
-  'playResX': 560,           // 屏幕分辨率宽（像素）
-  'playResY': 420,           // 屏幕分辨率高（像素）
+  'playResX': 1920,           // 屏幕分辨率宽（像素）
+  'playResY': 1080,           // 屏幕分辨率高（像素）
   'fontlist': [              // 字形（会自动选择最前面一个可用的）
     'Microsoft YaHei UI',
     'Microsoft YaHei',
@@ -33,10 +33,10 @@ var config = {
     'STHeitiSC',
     '黑体',
   ],
-  'font_size': 1.0,          // 字号（比例）
-  'r2ltime': 8,              // 右到左弹幕持续时间（秒）
-  'fixtime': 4,              // 固定弹幕持续时间（秒）
-  'opacity': 0.6,            // 不透明度（比例）
+  'font_size': 2,          // 字号（比例）
+  'r2ltime': 25,              // 右到左弹幕持续时间（秒）
+  'fixtime': 8,              // 固定弹幕持续时间（秒）
+  'opacity': 0.8,            // 不透明度（比例）
   'space': 0,                // 弹幕间隔的最小水平距离（像素）
   'max_delay': 6,            // 最多允许延迟几秒出现弹幕
   'bottom': 50,              // 底端给字幕保留的空间（像素）
@@ -193,8 +193,8 @@ Timer: 10.0000
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Fix,{{font}},25,&H{{alpha}}FFFFFF,&H{{alpha}}FFFFFF,&H{{alpha}}000000,&H{{alpha}}000000,1,0,0,0,100,100,0,0,1,2,0,2,20,20,2,0
-Style: R2L,{{font}},25,&H{{alpha}}FFFFFF,&H{{alpha}}FFFFFF,&H{{alpha}}000000,&H{{alpha}}000000,1,0,0,0,100,100,0,0,1,2,0,2,20,20,2,0
+Style: Fix,{{font}},35,&H{{alpha}}FFFFFF,&H{{alpha}}FFFFFF,&H{{alpha}}000000,&H{{alpha}}000000,1,0,0,0,100,100,0,0,1,2,0,2,20,20,2,0
+Style: R2L,{{font}},35,&H{{alpha}}FFFFFF,&H{{alpha}}FFFFFF,&H{{alpha}}000000,&H{{alpha}}000000,1,0,0,0,100,100,0,0,1,2,0,2,20,20,2,0
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
